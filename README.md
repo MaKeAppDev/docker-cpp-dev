@@ -9,7 +9,8 @@
 
 - CMake
 - gcc/g++
+- clang-format
+- clang-tidy
 - doxygen
 - lcov
 - valgrind
-- clang-format
