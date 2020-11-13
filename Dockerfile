@@ -12,5 +12,10 @@ RUN apt-get update && \
     lcov \
     valgrind \
     clang-format \
-    clang-tidy && \
+    clang-tidy \
+    python3-pip
+    python3-venv && \
     rm -rf /var/lib/apt/lists/*
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
+

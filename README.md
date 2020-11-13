@@ -14,3 +14,4 @@
 - doxygen
 - lcov
 - valgrind
+- Python 3
