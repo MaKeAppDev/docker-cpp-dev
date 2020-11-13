@@ -1,6 +1,16 @@
-FROM rikorose/gcc-cmake:latest
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND='noninteractive'
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-    wget git doxygen lcov valgrind clang-format clang-tidy-10 && \
+    build-essential \
+    cmake \
+    wget \
+    git \
+    doxygen \
+    lcov \
+    valgrind \
+    clang-format \
+    clang-tidy && \
     rm -rf /var/lib/apt/lists/*
