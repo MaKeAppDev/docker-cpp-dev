@@ -13,7 +13,7 @@ RUN apt-get update && \
     valgrind \
     clang-format \
     clang-tidy \
-    python3-pip
+    python3-pip \
     python3-venv && \
     rm -rf /var/lib/apt/lists/*
 
