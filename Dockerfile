@@ -10,6 +10,7 @@ RUN apt-get update && \
     git \
     doxygen \
     lcov \
+    clang \
     valgrind \
     clang-format \
     clang-tidy \

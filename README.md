@@ -9,6 +9,7 @@
 
 - CMake
 - gcc/g++
+- clang
 - clang-format
 - clang-tidy
 - doxygen
