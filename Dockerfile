@@ -11,6 +11,7 @@ RUN apt-get update && \
     doxygen \
     lcov \
     clang \
+    llvm \
     valgrind \
     clang-format \
     clang-tidy \
