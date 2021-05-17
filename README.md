@@ -1,9 +1,10 @@
 # C++ Development Docker Container
 
-[![Build Status](https://travis-ci.org/MaKeAppDev/docker-cpp-dev.svg?branch=master)](https://travis-ci.org/MaKeAppDev/docker-cpp-dev)
+[![Actions Status](https://github.com/MaKeAppDev/docker-cpp-dev/workflows/CI/badge.svg)](https://github.com/MaKeAppDev/docker-cpp-dev)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/makeappdev/cpp-dev)](https://hub.docker.com/r/makeappdev/cpp-dev/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/makeappdev/cpp-dev.svg)](https://hub.docker.com/r/makeappdev/cpp-dev/)
-[![Layers](https://shields.beevelop.com/docker/image/layers/makeappdev/cpp-dev/latest.svg)](https://hub.docker.com/r/makeappdev/cpp-dev/builds)
-[![Size](https://shields.beevelop.com/docker/image/image-size/makeappdev/cpp-dev/latest.svg)](https://hub.docker.com/r/makeappdev/cpp-dev/tags)
+[![Docker Image Size](https://img.shields.io/docker/image-size/makeappdev/cpp-dev)](https://hub.docker.com/r/makeappdev/cpp-dev/builds)
+[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/makeappdev/cpp-dev)](https://hub.docker.com/r/makeappdev/cpp-dev/builds)
 
 ## Installed Packages
 
