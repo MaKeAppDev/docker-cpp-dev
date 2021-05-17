@@ -12,6 +12,8 @@
 - clang
 - clang-format
 - clang-tidy
+- cppcheck
+- include-what-you-use
 - doxygen
 - lcov
 - valgrind
