@@ -19,7 +19,8 @@ RUN apt-get update && \
     iwyu \
     python3-pip \
     python3-venv && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    pip3 install cpplint
 
 COPY use_clang.sh use_gcc.sh /usr/bin/
 
