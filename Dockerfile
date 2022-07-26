@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND='noninteractive'
 
@@ -25,4 +25,3 @@ RUN apt-get update && \
 COPY use_clang.sh use_gcc.sh /usr/bin/
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
-
