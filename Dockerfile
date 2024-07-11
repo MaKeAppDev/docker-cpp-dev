@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND='noninteractive'
 
@@ -18,10 +18,11 @@ RUN apt-get update && \
     clang-tidy \
     cppcheck \
     iwyu \
+    pipx \
     python3-pip \
     python3-venv && \
     rm -rf /var/lib/apt/lists/* && \
-    pip3 install cpplint
+    pipx install cpplint
 
 COPY use_clang.sh use_gcc.sh /usr/bin/
 
