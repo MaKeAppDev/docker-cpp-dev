@@ -29,3 +29,5 @@ COPY use_clang.sh use_gcc.sh /usr/bin/
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
+ENV PATH=/root/.local/bin:"${PATH}"
+
