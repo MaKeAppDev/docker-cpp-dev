@@ -13,15 +13,14 @@ RUN apt-get update && \
     doxygen \
     lcov \
     clang \
+    libclang-dev \
     llvm \
     valgrind \
     clang-format \
     clang-tidy \
     cppcheck \
     iwyu \
-    pipx \
-    python3-pip \
-    python3-venv && \
+    pipx && \
     rm -rf /var/lib/apt/lists/* && \
     pipx install cpplint
 
