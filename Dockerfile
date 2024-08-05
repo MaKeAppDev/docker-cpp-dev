@@ -13,7 +13,7 @@ RUN apt-get update && \
     doxygen \
     lcov \
     clang \
-    libclang-dev \
+    libclang-rt-dev \
     llvm \
     valgrind \
     clang-format \
