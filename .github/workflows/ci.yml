@@ -21,6 +21,11 @@ jobs:
 
   docker:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ubuntu_version:
+          - "22.04"
+          - "24.04"
     steps:
       - name: Login to Docker Hub
         uses: docker/login-action@v4
@@ -36,8 +41,12 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           call: check
+          build-args: |
+            UBUNTU_VERSION=${{ matrix.ubuntu_version }}
       - name: Build and push
         uses: docker/build-push-action@v7
         with:
           push: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
-          tags: makeappdev/cpp-dev:24.04
+          build-args: |
+            UBUNTU_VERSION=${{ matrix.ubuntu_version }}
+          tags: makeappdev/cpp-dev:${{ matrix.ubuntu_version }}
