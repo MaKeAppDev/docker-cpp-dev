@@ -1,0 +1,69 @@
+default_stages:
+  - pre-commit
+
+repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+      - id: check-useless-excludes
+  - repo: https://github.com/hofbi/dev-tools
+    rev: 1.7.0
+    hooks:
+      - id: check-non-existing-and-duplicate-excludes
+      - id: check-max-one-sentence-per-line
+  - repo: https://github.com/pre-commit/pre-commit
+    rev: v4.5.1
+    hooks:
+      - id: validate_manifest
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args:
+          - --maxkb=1024
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-illegal-windows-names
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: check-vcs-permalinks
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+        args:
+          - --fix=lf
+      - id: trailing-whitespace
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.21.0
+    hooks:
+      - id: yamlfmt
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+        args:
+          - --strict
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.20.1
+    hooks:
+      - id: mypy
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.21.2
+    hooks:
+      - id: pyupgrade
+        args:
+          - --py310-plus
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.37.1
+    hooks:
+      - id: check-github-workflows
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.45.1
+    hooks:
+      - id: typos
+  - repo: https://github.com/google/keep-sorted
+    rev: v0.8.0
+    hooks:
+      - id: keep-sorted
