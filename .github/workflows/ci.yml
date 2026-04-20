@@ -9,6 +9,16 @@ on:
       - master
 
 jobs:
+  prek:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install uv and set the Python version
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: "3.14"
+      - run: SKIP=no-commit-to-branch uvx prek run --all-files --show-diff-on-failure
+
   docker:
     runs-on: ubuntu-latest
     steps:
