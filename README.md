@@ -6,15 +6,17 @@
 
 ## Installed Packages
 
+<!-- keep-sorted start -->
 - CMake
-- gcc/g++
+- Python 3
 - clang
 - clang-format
 - clang-tidy
 - cppcheck
 - cpplint
-- include-what-you-use
 - doxygen
+- gcc/g++
+- include-what-you-use
 - lcov
 - valgrind
-- Python 3
+<!-- keep-sorted end -->
