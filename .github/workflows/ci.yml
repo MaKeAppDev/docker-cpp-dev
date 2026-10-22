@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Install uv and set the Python version
-        uses: astral-sh/setup-uv@v9.0.0
+        uses: astral-sh/setup-uv@v10.3.1
         with:
           python-version: "3.14"
       - run: uvx prek run --all-files --show-diff-on-failure
